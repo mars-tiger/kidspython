@@ -22,4 +22,10 @@ brew install python3
 ```
 brew install python-tk
 ```
-4. Download and Install [PyCharm Community edition](https://www.jetbrains.com/pycharm/download/#section=mac)
+4. Optional: Install Git
+```
+brew install git
+```
+6. Download and Install [PyCharm Community edition](https://www.jetbrains.com/pycharm/download/#section=mac)
+* Choose `Get from VSC`
+* Choose "Git" for "Version control", then enter `https://github.com/mars-tiger/kidspython.git` for "URL"
