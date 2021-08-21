@@ -4,7 +4,7 @@
 * Change the shape of player two
 * Write players moves on the right hand side
 
-## Run Turtle Tic Tac Toe on Trinket
+## Run [Turtle](https://docs.python.org/3/library/turtle.html) Tic Tac Toe on Trinket
 
 You can edit and run the uploaded Tic Tac Toe code on [Trinket](https://trinket.io/python/1d3c1c4405).
 
