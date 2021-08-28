@@ -18,7 +18,7 @@ def draw_star(size, x, y):
   t.down()
   t.forward(size)
 
-  def draw_board(size, x, y):
+def draw_board(size, x, y):
   t.up()
   t.goto(x, y)
   t.down()
