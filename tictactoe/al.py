@@ -17,3 +17,21 @@ def draw_star(size, x, y):
   t.backward(size/2)
   t.down()
   t.forward(size)
+
+  def draw_board(size, x, y):
+  t.up()
+  t.goto(x, y)
+  t.down()
+  for i in range(4):
+    t.forward(size)
+    t.right(90)
+  for i in range(2):
+    for i in range(2):
+      t.forward(size/3)
+      t.right(90)
+      t.forward(size)
+      t.right(180)
+      t.forward(size)
+      t.right(90)
+    t.forward(size/3)
+    t.right(90)
