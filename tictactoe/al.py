@@ -1,3 +1,5 @@
+import tutle
+
 def draw_star(size, x, y):
   t.up()
   t.goto(x, y)
@@ -35,3 +37,6 @@ def draw_board(size, x, y):
       t.right(90)
     t.forward(size/3)
     t.right(90)
+
+t = turtle.Turtle()
+draw_star(25, 0, 0)  
