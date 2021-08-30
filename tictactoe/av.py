@@ -53,10 +53,10 @@ def draw(x, y):
 
     board[row][col] = xo
     if xo == "x":
-        draw_x(row, col)
+        draw_s(row, col)
         xo = "o"
     else:
-        draw_o(row, col)
+        draw_star(row, col)
         xo = "x"
 
     winner = check_winner()
