@@ -5,7 +5,7 @@ import turtle
 
 import turtle
 def draw_star(row, col):
-  x = col * size / 3.5 + offset_x + size / 12
+  x = col * size / 3 + offset_x + size / 27
   y = -row * size / 3 + offset_y - size / 6
   t.up()
   t.goto(x, y)
