@@ -1,37 +1,47 @@
-def draw_s(row, col):
-  x = col * size / 3 + offset_x + 25
-  y = -row * size / 3 + offset_y - 25
-  t.up()
-  t.home()
-  t.goto(x,y)
-  t.down()
-  for i in range(4):
-    t.forward(50)
-    t.right(90)
- import turtle
 
-def draw_star(size, x, y):
+
+
+import turtle
+
+import turtle
+def draw_star(row, col):
+  x = col * size / 3.5 + offset_x + size / 12
+  y = -row * size / 3 + offset_y - size / 6
   t.up()
   t.goto(x, y)
   t.down()
-  t.forward(size)
-  t.backward(size/2)
+  t.forward(80)
+  t.backward(80/2)
   t.left(60)
   t.up()
-  t.forward(size/2)
+  t.forward(80/2)
   t.down()
   t.right(180)
-  t.forward(size)
+  t.forward(80)
   t.left(180)
-  t.forward(size/2)
+  t.forward(80/2)
   t.left(60)
   t.up()
-  t.backward(size/2)
+  t.backward(80/2)
   t.down()
-  t.forward(size)
+  t.forward(80)
 
 
+def draw_x(row, col):
+    x = col * size / 3 + offset_x + size / 12
+    y = -row * size / 3 + offset_y - size / 4
+    t.up()
+    t.home()
+    t.goto(x, y)
+    t.left(45)
+    t.down()
+    t.forward(1.4 * xo_size)
 
+    t.up()
+    t.goto(x, y + xo_size)
+    t.down()
+    t.right(90)
+    t.forward(1.4 * xo_size)
 
 
 def draw(x, y):
@@ -44,10 +54,10 @@ def draw(x, y):
 
     board[row][col] = xo
     if xo == "x":
-        draw_s(row, col)
+        draw_x(row, col)
         xo = "o"
     else:
-        draw_star(row, col)
+        draw_o(row, col)
         xo = "x"
 
     winner = check_winner()
@@ -113,6 +123,16 @@ draw_board()
 wn = turtle.Screen()
 wn.onclick(draw)
 wn.mainloop()
+
+
+
+
+
+
+
+
+
+
 
 
 
