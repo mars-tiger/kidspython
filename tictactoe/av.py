@@ -38,11 +38,7 @@ def draw_s(row, col):
     t.forward(50)
     t.right(90)
 
-    t.up()
-    t.goto(x, y + xo_size)
-    t.down()
-    t.right(90)
-    t.forward(1.4 * xo_size)
+
 
 
 def draw(x, y):
