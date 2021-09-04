@@ -31,16 +31,7 @@ def draw_star(size, x, y):
   t.forward(size)
 
 
-def draw_s(row, col):
-  x = col * size / 3 + offset_x + 25
-  y = -row * size / 3 + offset_y - 25
-  t.up()
-  t.home()
-  t.goto(x,y)
-  t.down()
-  for i in range(4):
-    t.forward(50)
-    t.right(90)
+
 
 
 def draw(x, y):
