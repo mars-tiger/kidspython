@@ -36,8 +36,8 @@ def draw(x, y):
       
     t.up()
     t.goto(offset_x, offset_y - size - 30)
-    t.write(col)
-    t.write(row)
+    t.write((row,col))
+    
 
     board[row][col] = xo
     if xo == "x":
