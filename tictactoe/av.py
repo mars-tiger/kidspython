@@ -2,8 +2,13 @@
 
 
 import turtle
-
-import turtle
+def draw_btox():
+    t.up()
+    t.goto(-180, -180)
+    t.down()
+    for i in range(4):
+        t.left(90)
+        t.forward(360)
 def draw_star(row, col):
   x = col * size / 3 + offset_x + size / 27
   y = -row * size / 3 + offset_y - size / 6
