@@ -2,7 +2,7 @@
 
 
 import turtle
-def draw_btox():
+def draw_box():
     t.up()
     t.goto(-180, -180)
     t.down()
@@ -117,7 +117,7 @@ board = [
 winner = ""
 xo = "x"
 xo_size = size / 6
-
+draw_box()
 t = turtle.Turtle()
 t.ht()
 t.speed(200)
@@ -125,6 +125,7 @@ draw_board()
 wn = turtle.Screen()
 wn.onclick(draw)
 wn.mainloop()
+
 
 
 
