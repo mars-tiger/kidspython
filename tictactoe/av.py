@@ -4,7 +4,7 @@
 import turtle
 def draw_box():
     t.up()
-    t.goto(-180, -180)
+    t.goto(180, -180)
     t.down()
     for i in range(4):
         t.left(90)
