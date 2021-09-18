@@ -11,8 +11,26 @@ def draw(x, y):
 def check_winner():
   pass
 
-def draw_board():
-  pass
+def draw_board(x, y, size, x2, y2):
+  t.up()
+  t.goto(x, y)
+  t.down()
+  for i in range(4):
+    t.forward(size)
+    t.right(90)
+  t.up()
+  t.goto(x2, y2)
+  s = 25
+  for i in range(5):
+    for i in range(7):
+      t.circle(23)
+      t.up()
+      t.forward(25)
+      t.down()
+    t.up()
+    t.goto(x2, y2 - s)
+    s = s + 25
+    t.down()
 
 
 radius = 23
