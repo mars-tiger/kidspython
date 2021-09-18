@@ -68,7 +68,11 @@ def draw(x, y):
         t.up()
         t.goto(offset_x + size / 2, offset_y + 10)
         t.write("%s wins!" % winner, align="center", font=("Arial", 32, "bold"))
-
+    turtle.up()
+    turtle.goto(-150+20*moves,-170)
+    turtle.ht()
+    turtle.write([row,col])
+    moves+=1
 
 def check_winner():
     for i in range(3):
