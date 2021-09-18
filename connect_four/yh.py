@@ -1,7 +1,13 @@
 import turtle
 
 def draw_piece(row, col, color):
-  pass
+  x = col  + offset_x + 25
+  y = -row  + offset_y - 25
+  t.up()
+  t.home()
+  t.goto(x,y)
+  t.down()
+  t.circle(radius)
   
 def draw(x, y):
   global board, rb, winner
@@ -39,6 +45,7 @@ t.ht()
 t.speed(200)
 
 draw_board()
+draw_piece(0, 0, "green")
 
 wn = turtle.Screen()
 wn.onclick(draw)
