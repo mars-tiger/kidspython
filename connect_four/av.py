@@ -1,5 +1,11 @@
 import turtle
 
+def draw_circle():
+  t.color("green")
+  t.begin_fill()
+  t.circle(radius)
+  t.end_fill()
+  
 def draw_piece(row, col, color):
   pass
   
