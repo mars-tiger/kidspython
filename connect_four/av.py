@@ -1,7 +1,15 @@
 import turtle
 
-def draw_circle():
-  t.color("green")
+
+def draw_diskg():
+  color="green"
+  t.color(color)
+  t.begin_fill()
+  t.circle(radius)
+  t.end_fill()
+def draw_diskr():
+  color="red"
+  t.color(color)
   t.begin_fill()
   t.circle(radius)
   t.end_fill()
