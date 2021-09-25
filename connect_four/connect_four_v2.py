@@ -1,8 +1,8 @@
 import turtle
   
 def draw_piece(row, col, color):
-  x = offset_x + 25
-  y = offset_y - 25
+  x = offset_x + 25 + col * 2 * (radius + gap)
+  y = offset_y - 25 - row * 2 * (radius + gap)
   t.up()
   t.home()
   t.goto(x,y)
