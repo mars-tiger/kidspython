@@ -1,18 +1,13 @@
 import turtle
 
 
-def draw_diskg():
-  color="green"
+def draw_disk(color):
+  
   t.color(color)
   t.begin_fill()
   t.circle(radius)
   t.end_fill()
-def draw_diskr():
-  color="red"
-  t.color(color)
-  t.begin_fill()
-  t.circle(radius)
-  t.end_fill()
+
   
 def draw_piece(row, col, color):
   pass
@@ -32,10 +27,10 @@ def draw_board():
 t.up()
 t.home()
 t.down()
-draw_diskg()
+draw_disk("green")
 t.pu()
 t.goto(100,100)
-draw_diskr()
+draw_disk("red")
 
 
 
