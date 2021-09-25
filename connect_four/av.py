@@ -29,6 +29,17 @@ def draw_board():
   pass
 
 
+t.up()
+t.home()
+t.down()
+draw_diskg()
+t.pu()
+t.goto(100,100)
+draw_diskr()
+
+
+
+
 radius = 23
 gap = 2
 square_size = 2 * (radius + gap)
