@@ -32,6 +32,7 @@ def draw_board(x, y, size, x2, y2):
     s = s + 25
     t.down()
 
+    
 
 radius = 23
 gap = 2
@@ -61,3 +62,35 @@ draw_board()
 wn = turtle.Screen()
 wn.onclick(draw)
 wn.mainloop()
+
+def draw_board(x, y, size, x2, y2):
+  t.up()
+  t.goto(x, y)
+  t.down()
+  for i in range(4):
+    t.forward(size)
+    t.right(90)
+  t.up()
+  t.goto(x2, y2)
+  s = 50
+  t.backward(50)
+  for i in range(8):
+    t.circle(23)
+    t.up()
+    t.forward(50)
+    t.down()
+  t.up()
+  t.goto(x2, y2 - s)
+  s = s + 50
+  t.down()
+  for i in range(6):
+    for i in range(7):
+      t.circle(23)
+      t.up()
+      t.forward(50)
+      t.down()
+    t.up()
+    t.goto(x2, y2 - s)
+    s = s + 50
+    t.down()
+draw_board(-151, 174, 349, -127, 127)
