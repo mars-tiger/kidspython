@@ -14,15 +14,14 @@ def draw_piece(row, col, color):
   
 def draw(x, y):
   global board, rb, winner
-  pass
-  
+  col = int((x - offset_x) // square_size)
   
 def check_winner():
   pass
 
 def draw_board():
  # TODO: use a for loop to simplify the code
- t.color("blue")
+ t.color("purple")
  t.begin_fill()
  t.up()
  t.goto(190, -180)
@@ -58,7 +57,7 @@ board = [
 
 winner = ""
 
-rb = "r"
+rb = "red"
 
 t = turtle.Turtle()
 t.ht()
