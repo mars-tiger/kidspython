@@ -99,10 +99,11 @@ def check_winner():
     for col in range(4):
       if board[row][col] == board[row][col + 1] == board[row][col + 2] == board[row][col + 3] and board[row][col]:
         return board[row][col]
+        t.goto(100, -100)
+        t.write("rb wins!" , align="center", font=("Arial", 32, "bold"))
   return ""
 
-        t.goto(100, -100)
-        t.write(rb" wins!" , align="center", font=("Arial", 32, "bold"))
+
 
 
 wn = turtle.Screen()
