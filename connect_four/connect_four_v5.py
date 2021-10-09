@@ -34,9 +34,16 @@ def draw(x, y):
     rb = "red"
  
   winner = check_winner()
+  if winner:
+    t.goto(100, -100)
+    t.write("%s wins!" % rb, align="center", font=("Arial", 32, "bold"))
   
 def check_winner():
-  pass
+  for row in range(6):
+    for col in range(4):
+      if board[row][col] == board[row][col + 1] == board[row][col + 2] == board[row][col + 3] and board[row][col]:
+        return board[row][col]
+  return ""
 
 def draw_board():
  # TODO: use a for loop to simplify the code
