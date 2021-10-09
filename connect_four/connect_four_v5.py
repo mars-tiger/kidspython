@@ -27,16 +27,18 @@ def draw(x, y):
   
   draw_piece(row, col, rb)
   board[row][col] = rb
-  
+
+  winner = check_winner()
+  if winner:
+    t.goto(100, -100)
+    t.write("%s wins!" % rb, align="center", font=("Arial", 32, "bold"))
+    
   if rb == "red":
     rb = "blue"
   else:
     rb = "red"
  
-  winner = check_winner()
-  if winner:
-    t.goto(100, -100)
-    t.write("%s wins!" % rb, align="center", font=("Arial", 32, "bold"))
+
   
 def check_winner():
   for row in range(6):
