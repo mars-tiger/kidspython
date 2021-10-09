@@ -42,6 +42,8 @@ def check_winner():
         return board[row][col]
       if board[row][col]==board[row+1][col]== board[row+2][col] == board[row+3][col] and board[row][col]:
         return board[row][col]
+      if board[row][col] == board[row+1][col + 1] == board[row+2][col + 2] == board[row+3][col + 3] and board[row][col]:
+        return board[row][col]
   return ""
 
 def draw_board():
