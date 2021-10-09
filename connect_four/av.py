@@ -1,5 +1,12 @@
 import turtle
-  
+board = [
+  [None, None, None, None, None, None, None],
+  [None, None, None, None, None, None, None],
+  [None, None, None, None, None, None, None],
+  [None, None, None, None, None, None, None],
+  [None, None, None, None, None, None, None],
+  [None, None, None, None, None, None, None],
+] 
 def draw_piece(row, col, color):
   x = offset_x + 25 + col * 2 * (radius + gap)
   y = offset_y - 25 - row * 2 * (radius + gap)
@@ -11,17 +18,22 @@ def draw_piece(row, col, color):
   t.begin_fill()
   t.circle(radius)
   t.end_fill()
-  
+ 
 def draw(x, y):
   global board, rb, winner
-  pass
-  
+  col = int((x - offset_x) // square_size)  
+  for row in range(5, -1, -1):
+    if not board[row][col]:
+      print(row, col, board[row][col])
+    break
+    board[row][col] = rb
   
 def check_winner():
   pass
 
 def draw_board():
- t.color("blue")
+ # TODO: use a for loop to simplify the code
+ t.color("purple")
  t.begin_fill()
  t.up()
  t.goto(190, -180)
@@ -35,10 +47,6 @@ def draw_board():
  t.left(90)
  t.forward(380)
  t.end_fill()
-
-   
- 
-
                  
  for row in range(6):
    for col in range(7):
@@ -61,7 +69,7 @@ board = [
 
 winner = ""
 
-rb = "r"
+rb = "red"
 
 t = turtle.Turtle()
 t.ht()
